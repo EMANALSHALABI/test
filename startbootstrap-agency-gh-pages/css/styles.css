@@ -11894,9 +11894,11 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .gallery__img {
   width: 100%;
-  height: 82%;
+  height: 100%;
   object-fit: cover;
   display: block;
+  
+
 }
 @media screen and (max-width: 600px) {
   .gallery__img {
@@ -12017,7 +12019,7 @@ figure {
 
 .hover03 figure img {
   -webkit-transform: scale(1.5);
-  transform: scale(1.5);
+  transform: scale(1.1);
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
