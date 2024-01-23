@@ -1790,7 +1790,7 @@ strong {
   color: #fff !important;
   border: dashed 2px #8ba61a;
   display: block;
-  width: 150px;
+  min-width: 250px;
   text-align: center;
   cursor: pointer;
 }
