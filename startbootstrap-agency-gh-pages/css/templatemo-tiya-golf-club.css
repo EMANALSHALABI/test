@@ -19,6 +19,7 @@ https://templatemo.com/tm-587-tiya-golf-club
   font-family: "Montserrat";
   src: url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 }
+
 :root {
   --white-color: #ffffff;
   --primary-color: #81b29a;
@@ -1314,12 +1315,9 @@ strong {
   .hero-section {
     position: relative;
     top: 82px;
-    /* background-size: 310px 290px; */
-    background-size: 100% 100%;
-    /* width: 275px;  */
+  
     min-height: 325px;
     margin-bottom: 92px;
-
     background-position: center;
   }
 
@@ -1390,12 +1388,9 @@ strong {
   .hero-section {
     position: relative;
     top: 82px;
-    /* background-size: 310px 290px; */
-    background-size: 100% 100%;
-    /* width: 275px;  */
+  
     min-height: 325px;
     margin-bottom: 92px;
-
     background-position: center;
   }
 
@@ -1508,12 +1503,9 @@ strong {
   .hero-section {
     position: relative;
     top: 82px;
-    /* background-size: 310px 290px; */
-    background-size: 100% 100%;
-    /* width: 275px;  */
+  
     min-height: 325px;
     margin-bottom: 92px;
-
     background-position: center;
   }
 
@@ -2020,7 +2012,7 @@ strong {
   color: #fff !important;
   border: dashed 2px #8ba61a;
   display: block;
-  min-width: 250px;
+  min-width: 225px;
   text-align: center;
   cursor: pointer;
 }
@@ -2214,4 +2206,24 @@ strong {
 .info-list {
   list-style-type: none;
   padding-right: 3rem;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .text-body {
+    min-width: 200px;
+  }
+}
+@media only screen and (max-width: 250px) {
+  .text-body {
+    min-width: 150px;
+  }
+}
+@media only screen and (min-width: 950px) {
+  .text-body {
+    min-width: 300px;
+  }
 }
