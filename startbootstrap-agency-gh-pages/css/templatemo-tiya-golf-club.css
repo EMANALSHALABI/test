@@ -2210,6 +2210,7 @@ strong {
 @media only screen and (max-width: 600px) {
   body {
     overflow-x: hidden;
+    width: fit-content;
   }
 }
 @media only screen and (max-width: 300px) {
