@@ -1315,7 +1315,7 @@ strong {
   .hero-section {
     position: relative;
     top: 82px;
-  
+
     min-height: 325px;
     margin-bottom: 92px;
     background-position: center;
@@ -1388,7 +1388,7 @@ strong {
   .hero-section {
     position: relative;
     top: 82px;
-  
+
     min-height: 325px;
     margin-bottom: 92px;
     background-position: center;
@@ -1503,7 +1503,7 @@ strong {
   .hero-section {
     position: relative;
     top: 82px;
-  
+
     min-height: 325px;
     margin-bottom: 92px;
     background-position: center;
@@ -2210,7 +2210,7 @@ strong {
 @media only screen and (max-width: 600px) {
   body {
     overflow-x: hidden;
-    width: fit-content;
+    /* width: fit-content; */
   }
 }
 @media only screen and (max-width: 300px) {
