@@ -78,7 +78,7 @@ function handleFullWidthSizing() {
 
     document.querySelector('myElement').style.width = `calc(100vw - ${scrollbarWidth}px)`
 }
-const jsonFilePath = 'images/burger.json';
+const jsonFilePath = '../images/burger.json';
 fetch(jsonFilePath)
     .then(response => response.json())
     .then(jsonData => {
