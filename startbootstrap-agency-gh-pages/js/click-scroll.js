@@ -79,19 +79,13 @@ function handleFullWidthSizing() {
     document.querySelector('myElement').style.width = `calc(100vw - ${scrollbarWidth}px)`
 }
 const jsonFilePath = 'images/burger.json';
-fetch(jsonFilePath)
-    .then(response => response.json())
-    .then(jsonData => {
-        // Create an <img> element
-        const imgElement = document.createElement('img');
+const container = document.getElementById('lottie-container');
+const animationPath = 'path/to/animation.json';
 
-        // Set the image source to the JSON data
-        imgElement.src = jsonData;
-
-        // Append the <img> element to the container
-        const container = document.getElementById('image-container');
-        container.appendChild(imgElement);
-    })
-    .catch(error => {
-        console.error('Error loading JSON file:', error);
-    });
+lottie.loadAnimation({
+  container: container,
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: jsonFilePath
+});
