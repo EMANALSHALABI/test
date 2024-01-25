@@ -72,9 +72,26 @@ window.addEventListener('DOMContentLoaded', function () {
 //     $('.navbar-nav .nav-item .nav-link').eq(0).addClass('active');
 //     $('.navbar-nav .nav-item .nav-link:link').eq(0).removeClass('inactive');
 // });
- 
+
 function handleFullWidthSizing() {
     const scrollbarWidth = window.innerWidth - document.body.clientWidth
-  
+
     document.querySelector('myElement').style.width = `calc(100vw - ${scrollbarWidth}px)`
-  }
+}
+const jsonFilePath = 'images/burger.json';
+fetch(jsonFilePath)
+    .then(response => response.json())
+    .then(jsonData => {
+        // Create an <img> element
+        const imgElement = document.createElement('img');
+
+        // Set the image source to the JSON data
+        imgElement.src = jsonData;
+
+        // Append the <img> element to the container
+        const container = document.getElementById('image-container');
+        container.appendChild(imgElement);
+    })
+    .catch(error => {
+        console.error('Error loading JSON file:', error);
+    });
