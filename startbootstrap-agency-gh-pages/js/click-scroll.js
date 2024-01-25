@@ -78,14 +78,14 @@ function handleFullWidthSizing() {
 
     document.querySelector('myElement').style.width = `calc(100vw - ${scrollbarWidth}px)`
 }
-const jsonFilePath = 'images/burger.json';
-const container = document.getElementById('lottie-container');
-const animationPath = 'path/to/animation.json';
+// const jsonFilePath = 'images/burger.json';
+// const container = document.getElementById('lottie-container');
+// const animationPath = 'path/to/animation.json';
 
-lottie.loadAnimation({
-  container: container,
-  renderer: 'svg',
-  loop: true,
-  autoplay: true,
-  path: jsonFilePath
-});
+// lottie.loadAnimation({
+//   container: container,
+//   renderer: 'svg',
+//   loop: true,
+//   autoplay: true,
+//   path: jsonFilePath
+// });
