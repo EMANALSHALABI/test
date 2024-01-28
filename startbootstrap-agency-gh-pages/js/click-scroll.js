@@ -57,21 +57,21 @@ window.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-// $(".nav-link").on("shown.bs.tab", function (e) {
-//     var href = $(this).attr("data-bs-target");
-//     $("html, body").animate(
-//         {
-//             scrollTop: $(href).offset().top
-//         },
-//         "slow"
-//     );
-// });
+$(".nav-link").on("shown.bs.tab", function (e) {
+    var href = $(this).attr("data-bs-target");
+    $("html, body").animate(
+        {
+            scrollTop: $(href).offset().top
+        },
+        "slow"
+    );
+});
 
-// $(document).ready(function () {
-//     $('.navbar-nav .nav-item .nav-link:link').addClass('inactive');
-//     $('.navbar-nav .nav-item .nav-link').eq(0).addClass('active');
-//     $('.navbar-nav .nav-item .nav-link:link').eq(0).removeClass('inactive');
-// });
+$(document).ready(function () {
+    $('.navbar-nav .nav-item .nav-link:link').addClass('inactive');
+    $('.navbar-nav .nav-item .nav-link').eq(0).addClass('active');
+    $('.navbar-nav .nav-item .nav-link:link').eq(0).removeClass('inactive');
+});
 
 function handleFullWidthSizing() {
     const scrollbarWidth = window.innerWidth - document.body.clientWidth
