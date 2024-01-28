@@ -20,15 +20,15 @@
 
 //     });
 
-//     $('.click-scroll').eq(index).click(function (e) {
-//         var offsetClick = $('#' + 'section_' + value).offset().top - 94;
-//         e.preventDefault();
-//         $('html, body').animate({
-//             'scrollTop': offsetClick
-//         }, 300)
-//     });
+    $('.click-scroll').eq(index).click(function (e) {
+        var offsetClick = $('#' + 'section_' + value).offset().top - 94;
+        e.preventDefault();
+        $('html, body').animate({
+            'scrollTop': offsetClick
+        }, 300)
+    });
 
-// });
+});
 const privacyLink = document.getElementById('privacy-link');
 privacyLink.addEventListener('click', () => {
     window.location.href = 'page.html';
