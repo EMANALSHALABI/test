@@ -49,7 +49,7 @@ window.addEventListener('DOMContentLoaded', function () {
             logoContainer.classList.add('hidden');
             localStorage.clear();
 
-        }, 300);
+        }, 2000);
     } else {
         logoContainer.style.display = 'none';
         localStorage.clear();
