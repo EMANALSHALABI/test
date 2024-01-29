@@ -73,11 +73,11 @@ $(document).ready(function () {
     $('.navbar-nav .nav-item .nav-link:link').eq(0).removeClass('inactive');
 });
 
-function handleFullWidthSizing() {
-    const scrollbarWidth = window.innerWidth - document.body.clientWidth
+// function handleFullWidthSizing() {
+//     const scrollbarWidth = window.innerWidth - document.body.clientWidth
 
-    document.querySelector('myElement').style.width = `calc(100vw - ${scrollbarWidth}px)`
-}
+//     document.querySelector('myElement').style.width = `calc(100vw - ${scrollbarWidth}px)`
+// }
 // const jsonFilePath = 'images/burger.json';
 // const container = document.getElementById('lottie-container');
 // const animationPath = 'path/to/animation.json';
